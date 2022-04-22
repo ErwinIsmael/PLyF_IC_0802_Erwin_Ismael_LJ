@@ -7,16 +7,10 @@ public class LambdaTest{
     engine((int x, int y) -> x % y);
   }
 
-  private static void engine(CalculadoraInt cal){
+  private static void engine(Calculadora cal){
     int x = 2, y = 4;
     int resultado = cal.calcular(x, y);
     System.out.println("resultado = " + resultado);
   }
 
-  private static void engine(CalculadoraLong cal){
-    long x = 2, y = 4;
-    long resultado = cal.calcular(x, y);
-    System.out.println("resultado = " + resultado);
-
-  }
 }
